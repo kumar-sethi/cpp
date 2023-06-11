@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-//auto is now after c++11 is used as Resource acquisition is initialization to deduce the type of elements
+//auto is now after c++11 is  to deduce the type of elements
 // Legacy it was very normal auto keyword but after it is very powerful in terms of Generic coding.
     
     

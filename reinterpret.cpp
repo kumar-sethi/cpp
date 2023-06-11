@@ -12,7 +12,7 @@ class Banana{
         void eatB(){cout<<"Eatng Banana"<<endl;}
 };
 
-int main1(){
+main(){
     Banana *b = new Banana();
     Mango* m = new Mango();
 

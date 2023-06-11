@@ -21,6 +21,7 @@ void func(const explicitimplicit& o){
 main(){
 
     explicitimplicit obj = 52;
+    cout<<obj.getvalue()<<endl;
     func(90);
 
 

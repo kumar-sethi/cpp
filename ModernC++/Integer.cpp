@@ -96,13 +96,13 @@ private:
 public:
     Number(int value):m_Value{value}{}
     // When we define Copy constructor here Move cons./operator deleted
-    /*Number(const Number &n):m_Value{n.m_Value}{ 
+    Number(const Number &n):m_Value{n.m_Value}{ 
         cout<<"Copy Construxtor"<<endl;
-    }*/
+    }
     //Same as above with destructor ~Number(){}
 
     // If we provide implementation of any Move operation then Copy & other move operations got deleted
-    Number(Number&& n):m_Value{move(n.m_Value)}{}
+   // Number(Number&& n):m_Value{move(n.m_Value)}{}
     // then use default specifier
     /*Number(const Number& n)=default;
     Number& operator=(const Number& n)=default;
@@ -121,14 +121,15 @@ int main()
 
     //Integer c = move(b);
     */
-    /*
+    
     Number n1{1};
     auto n2(n1);
     n2=n1;
+    auto n4{move(n1)};
 
     auto n3{CreateNumber(3)};
     n3 = CreateNumber(4);
-    */
+    
 
     Integer a(1);
     auto b{a}; // it calls Copy Constructor : To force it to call Move constructor we need to cast 

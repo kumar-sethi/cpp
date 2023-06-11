@@ -15,11 +15,9 @@ int& transform(int x){
 void Print(int& x){
     cout<<endl<<"Printing int& L-value"<<endl;
 }
-
 void Print(const int& x){
     cout<<endl<<"Printing const int& const L-value"<<endl;
 }
-
 void Print(int&& x){
     cout<<endl<<"Printing int&& R-value "<<endl;
 }
